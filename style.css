@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+body {
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f53b57;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.main {
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.logo{
+	display: flex; 
+	align-items: center;
+}
+.logo img{
+    height: 35px;
+    width: auto;
+}
+.logo span{
+	margin-left: 10px;
+    font-size: 25px;
+	letter-spacing: 1px;
+    color: #1e272e;
+}
+.dataBox {
+    width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 10px 0;
+	font-size: 16px;
+    background: transparent;
+	outline: none;
+    border: 3px solid rgba( 255, 255, 255, 0.5);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.dataBox::placeholder{ color: #fff;}
+.btn,.downloadBtn {
+    position: relative;
+	margin: 10px 0;
+	padding: 10px 25px;
+	text-align: center;
+	border-radius: 40px;
+	border: none;
+    outline: none;
+	background-color: #3c40c6;
+	color: #f0f8ff;
+	font-weight: 600;
+	font-size: 16px;
+    letter-spacing: 2px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+	box-shadow: 0px 6px 10px #3c41c6a2;
+}
+.btn:after {
+    content: "";
+	display: block;
+	position: absolute;
+	background: #363bb3;
+	border-radius: 40px;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.btn:active:after {
+    padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
+}
+.qrdiv { text-align: center; }
+.qrcode {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.qrcode > img {
+    display: block;
+    margin: auto;
+    background: #fff;
+}
+.nameTag{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.downloadBtn {
+	background: #05c46b;
+    box-shadow: 0px 6px 10px #05c46bad;
+}
+.hide { display: none; }
+.error { border-color: #e22416; }
+.shake {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-0.5deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(0.5deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(0.5deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-0.5deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-0.5deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(0.5deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-0.5deg);
+	}
+}
